@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "my-font";
+    src: url(../static/fonts/arial.ttf);
+}
+
+body {
+    font-family: "my-font";
+    /* background-color: black; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin: 0px 0px 1px 0px;
+}
+
+.techshop {
+    color: yellow;
+}
+
+.sarech-but {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.mobile-menu-button{
+    display: none;
+    rotate: 90deg;
+    scale: 2.5;
+    cursor: pointer;
+}
+
+.mobile-menu-button{
+    display: none;
+    rotate: 90deg;
+    scale: 2.5;
+    cursor: pointer;
+}
+
+.mobile-menu h1{
+    color: var(--blue);
+}
+
+.mobile-menu{
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 4px 4px 20px 20px rgba(0, 0, 0, 0.484);
+    position: fixed;
+    top: 0;
+    left: -500px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    transition: all 0.5s;
+}
+
+.mobile-menu-open{
+    left: 0px;
+}
+
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background: #696ef5;
+    background: linear-gradient(90deg, rgba(105, 110, 245, 1) 0%, rgba(0, 109, 235, 1) 50%, rgba(5, 15, 74, 1) 100%);
+}
+
+.but-shop {
+    padding: 10px 15px 10px 15px;
+    margin: 0px 0px 20px 0px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.products{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.product{
+    padding: 15px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.pro-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us {
+    width: 700px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 0px 0px;
+    margin: 50px;
+}
+
+.input {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.contact-p {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.fn {
+    width: 600px;
+}
+
+.email {
+    width: 600px;
+}
+
+.massage {
+    width: 600px;
+    height: 100px;
+}
+
+.but {
+    padding: 5px 10px 5px 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    height: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-p {
+    color: white;
+}
+
+.mobile-menu-button-close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    scale: 2;
+    cursor: pointer;
+    color: white;
+}
+
+
+@media (max-width: 710px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+    .sarech-but {
+        display: none;
+    }
+    .sarech{
+        display: none;
+    }
+
+    .input {
+        width: 100px;
+    }
+    .fn {
+        width: 150px;
+    }
+    .email {
+        width: 150px;
+    }
+    .massage {
+        width: 150px;
+    }
+}
+
+@media (max-width: 710px) {
+    .links{  
+        display: none;
+    }
+    .mobile-menu-button{
+        display: block;
+        color: white;
+    }
+    .mobile-menu{
+        display: flex;
+        background-color: black;
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
