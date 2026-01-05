@@ -33,7 +33,7 @@
     .links {
         display: none;
     }
-    .mobile-button-links {
+    .mobile-menu-button {
         display: block;
         color: white;
         transform: rotate(90deg);
