@@ -14,79 +14,6 @@ body {
     box-sizing: border-box;
 }
 
-.nav {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    margin: 0px 0px 1px 0px;
-}
-
-.techshop {
-    color: yellow;
-}
-
-.sarech-but {
-    background-color: blue;
-    color: white;
-    border-radius: 5px;
-    padding: 2px 5px 2px 5px;
-    border: none;
-    margin: 3px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: white;
-}
-
-.mobile-menu-button{
-    display: none;
-    rotate: 90deg;
-    scale: 2.5;
-    cursor: pointer;
-}
-
-.mobile-menu-button{
-    display: none;
-    rotate: 90deg;
-    scale: 2.5;
-    cursor: pointer;
-}
-
-.mobile-menu h1{
-    color: var(--blue);
-}
-
-.mobile-menu{
-    width: 400px;
-    height: 100%;
-    background-color: white;
-    box-shadow: 4px 4px 20px 20px rgba(0, 0, 0, 0.484);
-    position: fixed;
-    top: 0;
-    left: -500px;
-    padding: 20px;
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    transition: all 0.5s;
-}
-
-.mobile-menu-open{
-    left: 0px;
-}
-
-
 .welcome {
     display: flex;
     align-items: center;
@@ -103,6 +30,7 @@ a {
     background-color: red;
     color: white;
     border-radius: 5px;
+    border: none;
 }
 
 img {
@@ -160,7 +88,7 @@ img {
     margin: 50px;
 }
 
-.input {
+.input-contact {
     width: 600px;
     display: flex;
     justify-content: center;
@@ -176,15 +104,15 @@ img {
     margin: 10px;
 }
 
-.fn {
+.full-name-contact {
     width: 600px;
 }
 
-.email {
+.email-contact {
     width: 600px;
 }
 
-.massage {
+.massage-contact {
     width: 600px;
     height: 100px;
 }
@@ -195,6 +123,7 @@ img {
     color: white;
     margin: 10px;
     border-radius: 5px;
+    border: none;
 }
 
 .footer {
