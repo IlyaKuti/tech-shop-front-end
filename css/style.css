@@ -1,3 +1,7 @@
+:root {
+    --color-link-add-to-card : rgb(0, 17, 255);
+}
+
 @font-face {
     font-family: "my-font";
     src: url(../static/fonts/arial.ttf);
@@ -12,6 +16,66 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "my-font";
+    src: url(../static/fonts/arial.ttf);
+}
+
+body {
+    font-family: "my-font";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.links-nav-bar{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin: 0px 0px 1px 0px;
+    z-index: 1;
+}
+
+.techshop{
+    color: yellow;
+}
+
+.sarech-but{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    border: none;
+    /* margin: 3px; */
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.mobile-menu-button{
+    display: none;
 }
 
 .welcome {
@@ -33,7 +97,7 @@ body {
     border: none;
 }
 
-img {
+.product img{
     width: 200px;
     height: 200px;
 }
@@ -144,4 +208,23 @@ img {
     scale: 2;
     cursor: pointer;
     color: white;
+}
+
+.link-add-to-card a{
+    text-decoration: none;
+    background-color:var(--color-link-add-to-card);
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.04s;
+}
+
+.link-add-to-card :hover{
+    background-color: white;
+    border: 2px solid var(--color-link-add-to-card);
+    color: black;
+}
+
+.mobile-buttons-links {
+    display: none;
 }
