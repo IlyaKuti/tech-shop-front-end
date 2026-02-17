@@ -1,0 +1,229 @@
+:root {
+    --color-link-add-to-card : rgb(0, 17, 255);
+}
+
+@font-face {
+    font-family: "my-font";
+    src: url(../static/fonts/arial.ttf);
+}
+
+body {
+    font-family: "my-font";
+    /* background-color: black; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "my-font";
+    src: url(../static/fonts/arial.ttf);
+}
+
+body {
+    font-family: "my-font";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.links-nav-bar{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin: 0px 0px 1px 0px;
+    z-index: 1;
+}
+
+.techshop{
+    color: yellow;
+}
+
+.sarech-but{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    border: none;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.mobile-menu-button{
+    display: none;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background: #696ef5;
+    background: linear-gradient(90deg, rgba(105, 110, 245, 1) 0%, rgba(0, 109, 235, 1) 50%, rgba(5, 15, 74, 1) 100%);
+}
+
+.but-shop {
+    padding: 10px 15px 10px 15px;
+    margin: 0px 0px 20px 0px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.product img{
+    width: 200px;
+    height: 200px;
+}
+
+.products{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.product{
+    padding: 15px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.pro-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us {
+    width: 700px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 0px 0px;
+    margin: 50px;
+}
+
+.input-contact {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.contact-p {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.full-name-contact {
+    width: 600px;
+}
+
+.email-contact {
+    width: 600px;
+}
+
+.massage-contact {
+    width: 600px;
+    height: 100px;
+}
+
+.but {
+    padding: 5px 10px 5px 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer {
+    height: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-p {
+    color: white;
+}
+
+.mobile-menu-button-close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    scale: 2;
+    cursor: pointer;
+    color: white;
+}
+
+.link-add-to-card a{
+    text-decoration: none;
+    background-color:var(--color-link-add-to-card);
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.04s;
+}
+
+.link-add-to-card :hover{
+    background-color: white;
+    border: 2px solid var(--color-link-add-to-card);
+    color: black;
+}
+
+.mobile-buttons-links {
+    display: none;
+}

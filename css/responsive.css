@@ -1,0 +1,79 @@
+@media (max-width: 992px) {
+    .welcome {
+        width: 820px;
+    }
+    .nav {
+        width: 820px;
+    }
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-us {
+        width: 500px;
+        height: 200px;
+    }
+    .full-name-contact {
+        width: 400px;
+    }
+    .email-contact {
+        width: 400px;
+    }
+    .massage-contact {
+        width: 400px;
+    }
+    .input-contact {
+        width: 500px;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav {
+        width: 420px;
+    }
+    .links {
+        display: none;
+    }
+    .mobile-menu-button {
+        display: block;
+        color: white;
+        transform: rotate(90deg);
+        scale: 1.1;
+    }
+    .welcome {
+        width: 420px;
+    }
+    .products {
+        grid-template-columns: 1fr;
+    }
+    .product {
+        margin: 0px 0px 50px 0px;
+    }
+    .contact-us {
+        width: 390px;
+        height: 200px;
+    }
+    .full-name-contact {
+        width: 270px;
+    }
+    .email-contact {
+        width: 270px;
+    }
+    .massage-contact {
+        width: 270px;
+    }
+    .input-contact {
+        width: 360px;
+    }
+
+}
+@media (max-width: 400px) {
+    .nav {
+        width: 385px;
+    }
+    .sarech {
+        width: 100px;
+    }
+    .welcome {
+        width: 400px;
+    }
+}
